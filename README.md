@@ -18,19 +18,14 @@ The end goal of the randomizer game can consist of:
 
 
 ## Which items can be in another player's world?
-All suit upgrades and expansion items can be shuffled in other players' worlds, excluding:
-- Power Suit
-- Power Beam
-- Combat Visor
-- Scan Visor
+All suit upgrades and expansion items can be shuffled in other players' worlds, excluding the Power Suit.
 
 ## What does another world's item look like in Metroid Prime?
 Multiworld items appear as a Metroid model with a glitched texture.
 
 
 ## What versions of the Metroid Prime are supported?
-Currently, the only supported version is the US `DOL-GM8E-0-00 USA` version for the Nintendo GameCube.  
-For information on determining the disc's version number, see [metroid2002.com metroid prime version differences version number](https://www.metroid2002.com/version_differences_version_number.php).  
+Only the GameCube versions of Metroid Prime are supported.
 The Wii and Switch versions of the game are *not* supported.  
 
 
@@ -52,7 +47,7 @@ To warp to the starting location,
 
 
 ### What Metroid Prime mods does this work with?
-It is recommended to use a vanilla US `DOL-GM8E-0-00 USA` ISO.  
+It is recommended to use a vanilla ISO.  
 Some users report success playing this with PrimeHack - however, this has not been extensively tested.  
 
 
