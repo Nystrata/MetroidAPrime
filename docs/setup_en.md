@@ -8,7 +8,6 @@ This has only been tested on Windows, but feel free to let us know if you get th
 The following are required in order to play _Metroid Prime_ in Archipelago:
 
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases)
-   For Archipelago 5.0/5.1, see the Note about Python versions in [APWorld Installation](#apworld-installation)
 - [Dolphin Emulator](https://dolphin-emu.org/download/). We recommend the latest Release version.
 - A _Metroid Prime_ (GameCube version) ISO file
   - Any official release copy of the GameCube version will work. (All region versions are compatible, including all three versions of NTSC-USA)
