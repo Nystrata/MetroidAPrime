@@ -22,21 +22,14 @@ The following are required in order to play _Metroid Prime_ in Archipelago:
 
 >[!NOTE]
 > Because Archipelago 5.1 on Windows transitioned to using Python 3.12, current releases of Metroid Prime AP offers two options to download:
-> | Archipelago Version                             |                                              |
-> |-------------------------------------------------|----------------------------------------------|
-> | Archipelago 5.1 or later for Windows            | Download APWorld file ending with `3.12.zip`.|
-> | Archipelago 5.1 AppImage or Tarball for Linux   | Download APWorld file ending with `3.11.zip`.|
-> | Archipelago 5.0 or earlier for Windows          | Download APWorld file ending with `3.11.zip`.|
+> | Archipelago Version                                       |                                              |
+> |-----------------------------------------------------------|----------------------------------------------|
+> | Archipelago 5.1 or later for Windows                      | Download APWorld file ending with `3.12.zip`.|
+> | Archipelago 5.0 or earlier for Windows                    | Download APWorld file ending with `3.11.zip`.|
+> | Archipelago 6.0 or later AppImage for Linux               | Download APWorld file ending with `3.12.zip`.|
+> | Archipelago 5.1 or earlier AppImage for Linux             | Download APWorld file ending with `3.11.zip`.|
 >
->  Future versions after Metroid Prime AP 0.4.9 will likely target only Python 3.12 and will only work on Archipelago 5.1.
-
->[!IMPORTANT]
-> If you have used a previous version of Metroid Prime AP that required copying folders into the `/lib` folder, go to your `Archipelago/lib` folder and delete the following directories:
-> - `dolphin_memory_engine` (This may be kept if another APWorld depends on this folder, but may cause issues if versions are mismatched.)
-> - `ppc_asm`
-> - `py_randomprime`
->
-> These are now included in the APWorld file.
+>  Future versions after Metroid Prime AP 0.4.9 will likely target only Python 3.12 and will only work on Archipelago 5.1 or newer.
 
 ## Setting Up Player Options YAML File
 
@@ -88,17 +81,12 @@ Once you do, follow these steps to connect to the room:
 - Use the latest Metroid Prime Archipelago release
   - Metroid Prime Archipelago: [Releases · Electro1512_MetroidAPrime](https://github.com/Electro1512/MetroidAPrime/releases)
 
-- Use the latest Dolphin Emulator
-  - Dolphin Emulator Release (**Recommended**): [Dolphin Emulator - Download](https://dolphin-emu.org/download/)
-  - PrimeHack: [Releases · shiiion/dolphin](https://github.com/shiiion/dolphin/releases)
-    - While the dependencies that Metroid Prime AP uses does not target PrimeHack, many users report that PrimeHack can work.
-      However, any issues found while using PrimeHack should be reproduced with the official Dolphin Emulator before reporting.
+- Use the latest Dolphin Emulator Release: [Dolphin Emulator - Download](https://dolphin-emu.org/download/)
 
 ### Generating and Patching Troubleshooting
 
 - If you do not see the client in the Archipelago Launcher
   - Ensure you have your `metroidprime.apworld` in the correct folder (The `custom_worlds` folder).
-  - Check if you have residual files from previous versions in the lib/worlds folder - see the [APWorld Installation section](#apworld-installation)
   - Go to `%TEMP%` (C:\Users\<Username>\AppData\Local\Temp) and delete the folder `ap_metroidprime_temp_lib_vX.Y.Z`. Then restart the Archipelago Launcher.
 
 - If you receive this error in a dialog box after opening the AP_XXXXX_PX.apmp1 file:
