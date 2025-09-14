@@ -10,6 +10,7 @@ The following are required in order to play _Metroid Prime_ in Archipelago:
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases)
 - [Dolphin Emulator](https://dolphin-emu.org/download/). We recommend the latest Release version.
 - A _Metroid Prime_ (GameCube version) ISO file
+  - This must be a full standard ISO. "Compressed ISO", "ciso", or "nkit.iso" will **not** work.
   - Any official release copy of the GameCube version will work. (All region versions are compatible, including all three versions of NTSC-USA)
   - The Wii and Switch version of the game are _not_ supported.
 
@@ -110,11 +111,11 @@ Once you do, follow these steps to connect to the room:
   - Start the Metroid Prime Client and Dolphin in a Specific Order
 
     - For some users, connecting to the AP server before letting the Metroid Prime client causes connection issues.
-      Try starting the game in this order:
-      1.) Start the Metroid Prime client
-      2.) Start Dolphin and start the game (if it launches automatically, that's fine)
-      3.) Select or create a save file and enter the game
-      4.) Enter the AP server address into the Metroid Prime Client
+      Try starting the game in this order:  
+      1.) Start the Metroid Prime client  
+      2.) Start Dolphin and start the game (if it launches automatically, that's fine)  
+      3.) Select or create a save file and enter the game  
+      4.) Enter the AP server address into the Metroid Prime Client  
 
   - For Linux, use Dolphin FlatPak
     - Install Dolphin Emulator from [Flathub](https://flathub.org/apps/org.DolphinEmu.dolphin-emu)
@@ -129,3 +130,4 @@ Once you do, follow these steps to connect to the room:
 
 In the offical [Archipelago Discord](https://discord.com/invite/8Z65BR2) under the `future-game-design` channel, there is a [_Metroid Prime_ thread](https://discord.com/channels/731205301247803413/1172631093837570068).
 Feel free to ping `@Electro15` or `@hesto2` with any bugs/thoughts/complaints/wishes/jokes you may have!
+
