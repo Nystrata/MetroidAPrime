@@ -20,17 +20,6 @@ The following are required in order to play _Metroid Prime_ in Archipelago:
 2. Unzip the downloaded Metroid Prime APWorld zip file and extract its files.
 3. In the Archipelago Launcher, select `Install APWorld`, and then select `metroidprime.apworld` file from the previous step.
 
->[!NOTE]
-> Because Archipelago 5.1 on Windows transitioned to using Python 3.12, current releases of Metroid Prime AP offers two options to download:
-> | Archipelago Version                                       |                                              |
-> |-----------------------------------------------------------|----------------------------------------------|
-> | Archipelago 5.1 or later for Windows                      | Download APWorld file ending with `3.12.zip`.|
-> | Archipelago 5.0 or earlier for Windows                    | Download APWorld file ending with `3.11.zip`.|
-> | Archipelago 6.0 or later AppImage for Linux               | Download APWorld file ending with `3.12.zip`.|
-> | Archipelago 5.1 or earlier AppImage for Linux             | Download APWorld file ending with `3.11.zip`.|
->
->  Future versions after Metroid Prime AP 0.4.9 will likely target only Python 3.12 and will only work on Archipelago 5.1 or newer.
-
 ## Setting Up Player Options YAML File
 
 All players playing _Metroid Prime_ must provide the room host with a YAML file containing the player options for their world.
@@ -78,48 +67,48 @@ Once you do, follow these steps to connect to the room:
 ## Troubleshooting
 
 ### General Troubleshooting Tips
-- Use the latest Metroid Prime Archipelago release
-  - Metroid Prime Archipelago: [Releases · Electro1512_MetroidAPrime](https://github.com/Electro1512/MetroidAPrime/releases)
+Use the latest Metroid Prime Archipelago release
+- Metroid Prime Archipelago: [Releases · Electro1512_MetroidAPrime](https://github.com/Electro1512/MetroidAPrime/releases)
 
 - Use the latest Dolphin Emulator Release: [Dolphin Emulator - Download](https://dolphin-emu.org/download/)
 
 ### Generating and Patching Troubleshooting
 
-- If you do not see the client in the Archipelago Launcher
-  - Ensure you have your `metroidprime.apworld` in the correct folder (The `custom_worlds` folder).
-  - Go to `%TEMP%` (C:\Users\<Username>\AppData\Local\Temp) and delete the folder `ap_metroidprime_temp_lib_vX.Y.Z`. Then restart the Archipelago Launcher.
+If you do not see the client in the Archipelago Launcher
+- Ensure you have your `metroidprime.apworld` in the correct folder (The `custom_worlds` folder).
+- Go to `%TEMP%` (C:\Users\<Username>\AppData\Local\Temp) and delete the folder `ap_metroidprime_temp_lib_vX.Y.Z`. Then restart the Archipelago Launcher.
 
-- If you receive this error in a dialog box after opening the AP_XXXXX_PX.apmp1 file:
-  > Count Mount File
-  > The disc image is corrupted.
+If you receive this error in a dialog box after opening the AP_XXXXX_PX.apmp1 file:
+> Count Mount File
+> The disc image is corrupted.
 
-  This is not an error related to the patcher - this is Windows File Explorer attempting to mount the GameCube ISO as a removable drive. It's likely that the patcher did sucessfully patch the game.
-  See if the patched ISO exists (often named AP_XXXXX_PX.iso). If it does, you can load it manually in Dolphin.
+This is not an error related to the patcher - this is Windows File Explorer attempting to mount the GameCube ISO as a removable drive. It's likely that the patcher did sucessfully patch the game.
+See if the patched ISO exists (often named AP_XXXXX_PX.iso). If it does, you can load it manually in Dolphin.
 
 ### Connection Troubleshooting
-- I have the randomized game open in Dolphin, but the Metroid Prime client says it can't connect to it!
-  - Make Sure the ISO is Randomized
-    - On the Main Menu, "Archipelago Metroid Prime" text should appear. ([image example](https://i.imgur.com/W6172zf.png))
-  - Ensure Only One Instance of Dolphin is Running
-    - Check Task Manager to see if there's multiple emulator instances running.
-    - You can also just restart your computer to be sure.
+I have the randomized game open in Dolphin, but the Metroid Prime client says it can't connect to it!
+- Make Sure the ISO is Randomized
+  - On the Main Menu, "Archipelago Metroid Prime" text should appear. ([image example](https://i.imgur.com/W6172zf.png))
+- Ensure Only One Instance of Dolphin is Running
+  - Check Task Manager to see if there's multiple emulator instances running.
+  - You can also just restart your computer to be sure.
 
-  - Disable Emulated Memory Size Override
-    - In Dolphin,
-      Config -> Advanced tab,
-      **Uncheck** Enable Emulated Memory Size Override
-  - Start the Metroid Prime Client and Dolphin in a Specific Order
+- Disable Emulated Memory Size Override
+  - In Dolphin,
+    Config -> Advanced tab,
+    **Uncheck** Enable Emulated Memory Size Override
+- Start the Metroid Prime Client and Dolphin in a Specific Order
 
-    - For some users, connecting to the AP server before letting the Metroid Prime client causes connection issues.
-      Try starting the game in this order:  
-      1.) Start the Metroid Prime client  
-      2.) Start Dolphin and start the game (if it launches automatically, that's fine)  
-      3.) Select or create a save file and enter the game  
-      4.) Enter the AP server address into the Metroid Prime Client  
+  - For some users, connecting to the AP server before letting the Metroid Prime client causes connection issues.
+    Try starting the game in this order:  
+    [1] Start the Metroid Prime client  
+    [2] Start Dolphin and start the game (if it launches automatically, that's fine)  
+    [3] Select or create a save file and enter the game  
+    [4] Enter the AP server address into the Metroid Prime Client  
 
-  - For Linux, use Dolphin FlatPak
-    - Install Dolphin Emulator from [Flathub](https://flathub.org/apps/org.DolphinEmu.dolphin-emu)
-    - Dolphin Memory Engine, as part of the Prime AP Client, can not access regular Dolphin's process but can access Flatpak's containerized Dolphin's process
+- For Linux, use Dolphin FlatPak
+  - Install Dolphin Emulator as a Flatpak (Linux users can add the following Flatpak repository: `https://flatpak.dolphin-emu.org/releases.flatpakrepo`)
+  - Dolphin Memory Engine, as part of the Prime AP Client, can not access regular Dolphin's process but can access Flatpak's containerized Dolphin's process
 
 ### In-Game Troubleshooting
 - In Dolphin, when fighting Ridley my screen keeps changing width

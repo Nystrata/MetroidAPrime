@@ -1,10 +1,8 @@
 # Metroid Prime Archipelago
 
+To get started or for troubleshooting, see **[the Setup Guide](./docs/setup_en.md)**!
+
 An Archipelago implementation of Metroid Prime multiworld randomizer using [randomprime](https://github.com/randovania/randomprime/)
-
-## Setup Guide
-
-To get started or for troubleshooting, see [the Setup Guide](./docs/setup_en.md).
 
 ## Info
 ### What does randomization do to this game?
